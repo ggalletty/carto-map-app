@@ -1,3 +1,5 @@
+![Preview of application features](./assets/preview.gif)
+
 # CARTO React App
 
 This is a demo application to showcase a basic implementation of [CARTO Maps](https://carto.com/) using [deck.gl](https://deck.gl/) and React.
@@ -21,7 +23,7 @@ This small project depends on the following tech stack:
 We'll handle primarily two features
 
 - Render a map
-- Support data visualization layers
+- Support data visualization layers and their customization
 
 ## Contributing
 
