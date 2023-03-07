@@ -4,6 +4,6 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => {
-  const base = process.env["BASE_URL"] ?? "/";
+  const base = process.env["VITE_BASE_URL"] ?? "/";
   return { base, plugins: [react(), basicSsl()] };
 });
