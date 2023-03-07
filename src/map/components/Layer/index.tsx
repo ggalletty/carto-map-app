@@ -1,5 +1,4 @@
 import CartoLayer from "./Carto";
-import GeoJsonLayer from "./GeoJson";
 
 export const getListOfLayers = () => [
   CartoLayer({
@@ -43,4 +42,4 @@ export const getListOfLayers = () => [
   }),
 ];
 
-export { CartoLayer, GeoJsonLayer };
+export { CartoLayer };
