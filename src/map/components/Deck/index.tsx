@@ -6,9 +6,10 @@ import { actions } from "./state";
 
 type Props = StateProps & {
   children?: ReactNode | undefined;
+  layers: any[] | undefined;
 };
 
-export const Deck = ({ center, children, zoom }: Props) => {
+export const Deck = ({ center, children, layers, zoom }: Props) => {
   const initialViewState = useMemo(
     () => ({
       latitude: center[0],
@@ -20,6 +21,7 @@ export const Deck = ({ center, children, zoom }: Props) => {
 
   return (
     <DeckGL
+      layers={layers}
       initialViewState={initialViewState}
       controller={true}
       children={children}
