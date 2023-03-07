@@ -31,6 +31,10 @@ jobs:
           cache: "yarn"
       - run: yarn install
       - run: yarn build
+        env:
+          VITE_CARTO_BASE_URL: ${{ vars.CARTO_URL }}
+          VITE_CARTO_MAP_ID: ${{ vars.CARTO_MAP_ID }}
+          VITE_CARTO_ACCESS_TOKEN: ${{ vars.CARTO_TOKEN }}
       - uses: actions/configure-pages@v3
       - uses: actions/upload-pages-artifact@v1
         with:
